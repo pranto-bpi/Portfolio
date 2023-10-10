@@ -1,6 +1,7 @@
 'use client'
 import logo from "@/assets/logo2.png";
-import { navigation } from "@/constants/data";
+import { navigation } from "@/constants/Data";
+
 import Image from "next/image";
 import Link from "next/link";
 

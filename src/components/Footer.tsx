@@ -41,7 +41,7 @@ export default function Footer() {
 
             {services.map((item)=> (
            
-            <li className="hover:text-black cursor-pointer duration-300  relative group overflow-hidden  ">
+            <li key={item.title} className="hover:text-black cursor-pointer duration-300  relative group overflow-hidden  ">
                  {item.title}
                  <span
                    className=" h-[1px] w-full bg-black inline-flex absolute left-0 bottom-0 

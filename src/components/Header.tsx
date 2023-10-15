@@ -1,5 +1,5 @@
 'use client'
-import logo from "@/assets/logo2.png";
+import logo from "@/assets/pranto.png";
 import { navigation } from "@/constants/Data";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -15,7 +15,7 @@ const Header = () => {
     <div className=" w-full h-20 bg-designColor/60">
       <div className="max-w-screen-xl mx-auto h-full flex items-center justify-between px-4 xl:px-0 relative">
           <Link href={"/"}>
-        <Image src={logo} alt="Logo Image " className="w-24 cursor-pointer" />
+        <Image src={logo} alt="Logo Image " className="w-72 cursor-pointer" />
           </Link>
 
         <ul className="hidden md:flex items-center text-sm font-semibold uppercase gap-5 text-zinc-600">

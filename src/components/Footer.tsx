@@ -3,21 +3,21 @@ import React from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/assets/logo1.png";
+import Logo from "@/assets/pranto.png";
 import { navigation, services } from "@/constants/Data";
 import { Facebook } from "lucide-react";
 import { Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
-    <div className="bg-zinc-700 text-zinc-200">
+    <div className="bg-zinc-700 text-zinc-200 mt-10">
       <Container className="grid grid-cols-1 md:cols-2 xl:grid-cols-4 gap-10 xl:place-items-center ">
        <div className="text-white">
           <Link href={"/"}>
             <Image
               src={Logo}
               alt="Logo Image "
-              className="w-24 cursor-pointer"
+              className="w-72 cursor-pointer"
             />
           </Link>
           <p className="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deserunt nemo officia corrupti debitis quod deleniti accusantium nisi commodi minus.</p>

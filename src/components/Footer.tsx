@@ -20,7 +20,7 @@ export default function Footer() {
               className="w-56 cursor-pointer "
             />
           </Link>
-          <p className="text-sm mt-5 text-justify " >I'm a Full stack web Developer I specialized in Reactjs, React Native, Nextjs, Nodejs, Sanity.io, MongoDB, Tailwindcss, Expo and many more.</p>
+          <p className="text-sm mt-5 text-justify " >I am a Full stack web Developer I specialized in Reactjs, React Native, Nextjs, Nodejs, Sanity.io, MongoDB, Tailwindcss, Expo and many more.</p>
           </div>
           <ul className=" flex flex-col items-center text-sm font-semibold uppercase gap-5 text-white">
           <p className="text-bold text-red-600">Q-uick Touch </p>

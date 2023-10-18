@@ -3,33 +3,33 @@ import React from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/assets/pranto.png";
+import Logo from "@/assets/footerWhite.png";
 import { navigation, services } from "@/constants/Data";
 import { Facebook } from "lucide-react";
 import { Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
-    <div className="bg-zinc-700 text-zinc-200 mt-10">
+    <div className="bg-blue-950 text-zinc-200 mt-10">
       <Container className="grid grid-cols-1 md:cols-2 xl:grid-cols-4 gap-10 xl:place-items-center ">
-       <div className="text-white">
+       <div className="text-white border border-white px-4">
           <Link href={"/"}>
             <Image
               src={Logo}
               alt="Logo Image "
-              className="w-72 cursor-pointer"
+              className="w-56 cursor-pointer "
             />
           </Link>
-          <p className="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deserunt nemo officia corrupti debitis quod deleniti accusantium nisi commodi minus.</p>
+          <p className="text-sm mt-5 text-justify " >I'm a Full stack web Developer I specialized in Reactjs, React Native, Nextjs, Nodejs, Sanity.io, MongoDB, Tailwindcss, Expo and many more.</p>
           </div>
-          <ul className=" flex flex-col items-start text-sm font-semibold uppercase gap-5 text-red-600">
-
+          <ul className=" flex flex-col items-center text-sm font-semibold uppercase gap-5 text-white">
+          <p className="text-bold text-red-600">Q-uick Touch </p>
             {navigation.map((item)=> (
            <Link key={item.title} href={item.href}>
             <li className="hover:text-black cursor-pointer duration-300  relative group overflow-hidden  ">
                  {item.title}
                  <span
-                   className=" h-[1px] w-full bg-black inline-flex absolute left-0 bottom-0 
+                   className=" h-[1px] w-full bg-green-400 inline-flex absolute left-0 bottom-0 
                          -translate-x-[100%]  group-hover:translate-x-0 transition-transform duration-300"
                  />
                </li>
@@ -37,14 +37,14 @@ export default function Footer() {
               ))}
         
           </ul>
-          <ul className=" flex flex-col items-start text-sm font-semibold uppercase gap-5 text-red-600">
-
+          <ul className=" flex flex-col items-center text-sm font-semibold uppercase gap-5 text-white   ">
+              <p className="text-bold text-red-600">Our Services</p>
             {services.map((item)=> (
            
             <li key={item.title} className="hover:text-black cursor-pointer duration-300  relative group overflow-hidden  ">
                  {item.title}
                  <span
-                   className=" h-[1px] w-full bg-black inline-flex absolute left-0 bottom-0 
+                   className=" h-[1px] w-full bg-green-400 inline-flex absolute left-0 bottom-0 
                          -translate-x-[100%]  group-hover:translate-x-0 transition-transform duration-300"
                  />
                </li>

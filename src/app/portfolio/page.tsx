@@ -1,16 +1,12 @@
 import Container from '@/components/Container'
+import Title from '@/components/Title'
 import React from 'react'
-
+import MyPortfolio from '@/components/MyPortfolio'
 const Portfolio = () => {
   return (
-   <Container>
-   <div>
-     <p>Portfolio</p>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur neque perspiciatis amet a saepe officia optio dolore maiores? Repellendus.</p>
-   </div>
-   
-
-   </Container>
+   <Container>  
+  <MyPortfolio/>
+  </Container>
   )
 }
 

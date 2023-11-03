@@ -6,13 +6,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu,X } from "lucide-react"
 import { useStyleRegistry } from "styled-jsx";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 
 const Header = () => {
   const [show,setShow] = useState(false);
-  const pathname =usePathname()
- 
+  const pathname =usePathname();
+  //6 no video start 
+  const router = useRouter();
+  console.log(router);
+  
+  
   return (
     <div className=" w-full h-20 bg-blue-950 sticky top-0 z-50 ">
       <div className="max-w-screen-xl mx-auto h-full flex items-center justify-between px-4 xl:px-0 relative">
@@ -25,7 +29,7 @@ const Header = () => {
           {
               navigation.map((item)=> (
                <Link key={item.title} href={item.href} target={item?.target}>
-               <li className={`hover:text-green-300 cursor-pointer duration-300  relative group overflow-hidden ${pathname===item.href && "text-black"}`}>
+               <li className={`hover:text-green-300 cursor-pointer duration-300  relative group overflow-hidden ${pathname===item.href && "text-green-300"}`}>
                  {item.title}
                  <span
                    className={ `h-[1px] w-full bg-white inline-flex absolute left-0 bottom-0 
@@ -54,6 +58,7 @@ const Header = () => {
             ))}
           </ul>
         )}
+      {/* <p className="bg-black text-gray-500 hover:text-white duration-200 px-4 py-1">test</p> */}
       </div>
     </div>
   );

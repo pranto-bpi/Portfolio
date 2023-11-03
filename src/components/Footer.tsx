@@ -23,13 +23,13 @@ export default function Footer() {
           <p className="text-sm mt-5 text-justify " >I am a Full stack web Developer I specialized in Reactjs, React Native, Nextjs, Nodejs, Sanity.io, MongoDB, Tailwindcss, Expo and many more.</p>
           </div>
           <ul className=" flex flex-col items-center text-sm font-semibold uppercase gap-5 text-white">
-          <p className="text-bold text-red-600">Q-uick Touch </p>
+          <p className="text-bold text-fuchsia-500">Q-uick Touch </p>
             {navigation.map((item)=> (
            <Link key={item.title} href={item.href}>
-            <li className="hover:text-black cursor-pointer duration-300  relative group overflow-hidden  ">
+            <li className="hover:text-green-300 cursor-pointer duration-300  relative group overflow-hidden  ">
                  {item.title}
                  <span
-                   className=" h-[1px] w-full bg-green-400 inline-flex absolute left-0 bottom-0 
+                   className=" h-[1px] w-full bg-red-500 inline-flex absolute left-0 bottom-0 
                          -translate-x-[100%]  group-hover:translate-x-0 transition-transform duration-300"
                  />
                </li>

@@ -137,10 +137,10 @@ export const myskils =[
     title:"Next js",href:"https://nodejs.org/en", terget:'_blank'
 },
   {
-    title:"Arogga",href:"https://www.arogga.com/", terget:'_blank'
+    title:"Freelancer",href:"https://www.freelancer.com/", terget:'_blank'
 },
   {
-    title:"Arogga",href:"https://www.arogga.com/", terget:'_blank'
+    title:"UpWork",href:"https://www.upwork.com/", terget:'_blank'
 },
   {
     title:"Arogga",href:"https://www.arogga.com/", terget:'_blank'

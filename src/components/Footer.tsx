@@ -29,7 +29,7 @@ export default function Footer() {
             <li className="hover:text-green-300 cursor-pointer duration-300  relative group overflow-hidden  ">
                  {item.title}
                  <span
-                   className=" h-[1px] w-full bg-red-500 inline-flex absolute left-0 bottom-0 
+                   className=" h-[1px] w-full bg-white inline-flex absolute left-0 bottom-0 
                          -translate-x-[100%]  group-hover:translate-x-0 transition-transform duration-300"
                  />
                </li>
@@ -38,13 +38,13 @@ export default function Footer() {
         
           </ul>
           <ul className=" flex flex-col items-center text-sm font-semibold uppercase gap-5 text-white   ">
-              <p className="text-bold text-red-600">Our Services</p>
+              <p className="text-bold text-fuchsia-500">Our Services</p>
             {services.map((item)=> (
            
-            <li key={item.title} className="hover:text-black cursor-pointer duration-300  relative group overflow-hidden  ">
+            <li key={item.title} className="hover:text-green-300 cursor-pointer duration-300  relative group overflow-hidden  ">
                  {item.title}
                  <span
-                   className=" h-[1px] w-full bg-green-400 inline-flex absolute left-0 bottom-0 
+                   className=" h-[1px] w-full bg-white inline-flex absolute left-0 bottom-0 
                          -translate-x-[100%]  group-hover:translate-x-0 transition-transform duration-300"
                  />
                </li>
